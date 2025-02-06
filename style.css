@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+/* h1{ */
+    /* display:flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+/* /} */
+/* .row-second img{ */
+    /* position:relative; */
+
+/* } */
+
+#img-lf{
+    position: relative;
+    width: 30%;
+    bottom: 50%;
+    top: 10%;
+    left: 25%;
+}
+#heading{
+    position: absolute;
+    width: 150%;
+    height: 70%;
+    top: 52%;
+    left: 25%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Responsive Design - Mobile First Approach */
+@media (max-width: 1200px) {
+    #heading {
+        font-size: 2rem;
+        left: 20%;
+        top: 35%;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Navbar Adjustments */
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    /* Adjust section content */
+    .t-side p {
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    /* Reduce heading size */
+    #heading {
+        font-size: 1.8rem;
+        left: 15%;
+        top: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Stack navigation items */
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    /* Reduce image height */
+    .section-1 img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    /* Adjust heading for smaller screens */
+    #heading {
+        font-size: 1.5rem;
+        left: 10%;
+        top: 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Reduce padding for better spacing */
+    .container-fluid {
+        padding: 10px;
+    }
+
+    /* Stack footer items */
+    #foot-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Reduce font sizes */
+    .t-side p {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust heading size */
+    #heading {
+        font-size: 1.2rem;
+        left: 5%;
+        top: 50%;
+    }
+}
+
